@@ -1,0 +1,11 @@
+#goal definition
+float32 speed
+float32 distance
+float32 time
+nav_msgs/Path path
+---
+#result definition
+builtin_interfaces/Duration total_elapsed_time
+---
+#feedback definition
+float32 time_remaining

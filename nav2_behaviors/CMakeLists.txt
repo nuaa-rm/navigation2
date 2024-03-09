@@ -47,6 +47,14 @@ set(dependencies
 )
 
 # plugins
+add_library(nav2_back_up_follow_path_behavior SHARED
+  plugins/back_up_follow_path.cpp
+)
+
+ament_target_dependencies(nav2_back_up_follow_path_behavior
+  ${dependencies}
+)
+
 add_library(nav2_spin_behavior SHARED
   plugins/spin.cpp
 )
@@ -117,6 +125,7 @@ install(TARGETS ${library_name}
                 nav2_assisted_teleop_behavior
                 nav2_drive_on_heading_behavior
                 nav2_back_up_behavior
+                nav2_back_up_follow_path_behavior
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION bin
@@ -152,6 +161,7 @@ ament_export_libraries(${library_name}
   nav2_assisted_teleop_behavior
   nav2_drive_on_heading_behavior
   nav2_back_up_behavior
+  nav2_back_up_follow_path_behavior
 )
 ament_export_dependencies(${dependencies})
 ament_package()

@@ -7,6 +7,13 @@
 <root>
   <TreeNodesModel>
     <!-- ############################### ACTION NODES ################################# -->
+    <Action ID="BackUpFollowPath">
+      <input_port name="speed" default="1.0"/>
+      <input_port name="distance" default="0.5"/>
+      <input_port name="time" default="1.0"/>
+      <input_port name="path">Path to follow</input_port>
+    </Action>
+    
     <Action ID="BackUp">
       <input_port name="backup_dist">Distance to backup</input_port>
       <input_port name="backup_speed">Speed at which to backup</input_port>

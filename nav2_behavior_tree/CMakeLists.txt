@@ -51,6 +51,9 @@ ament_target_dependencies(${library_name}
   ${dependencies}
 )
 
+add_library(nav2_back_up_follow_path_action_bt_node SHARED plugins/action/back_up_follow_path_action.cpp)
+list(APPEND plugin_libs nav2_back_up_follow_path_action_bt_node)
+
 add_library(nav2_compute_path_to_pose_action_bt_node SHARED plugins/action/compute_path_to_pose_action.cpp)
 list(APPEND plugin_libs nav2_compute_path_to_pose_action_bt_node)
 
