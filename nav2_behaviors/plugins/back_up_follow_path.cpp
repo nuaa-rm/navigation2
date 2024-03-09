@@ -13,7 +13,7 @@ namespace nav2_behaviors
     cmd_vel_.linear.z = 0;
     cmd_vel_.angular.x = 0;
     cmd_vel_.angular.y = 0;
-    // cmd_vel_.angular.z = 0;
+    cmd_vel_.angular.z = 0;
     // geometry_msgs::msg::PoseStamped current_pose;
     // if (!nav2_util::getCurrentPose(
     //         current_pose, *tf_, global_frame_, robot_base_frame_,
