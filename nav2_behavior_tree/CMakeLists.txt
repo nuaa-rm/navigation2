@@ -50,6 +50,8 @@ add_library(${library_name} SHARED
 ament_target_dependencies(${library_name}
   ${dependencies}
 )
+add_library(nav2_keep_away_from_obstacles_action_bt_node SHARED plugins/action/keep_away_from_obstacles_action.cpp)
+list(APPEND plugin_libs nav2_keep_away_from_obstacles_action_bt_node)
 
 add_library(nav2_back_up_follow_path_action_bt_node SHARED plugins/action/back_up_follow_path_action.cpp)
 list(APPEND plugin_libs nav2_back_up_follow_path_action_bt_node)
