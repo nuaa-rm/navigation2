@@ -1,7 +1,6 @@
 #goal definition
 float32 speed
 float32 distance
-float32 time
 ---
 #result definition
 builtin_interfaces/Duration total_elapsed_time

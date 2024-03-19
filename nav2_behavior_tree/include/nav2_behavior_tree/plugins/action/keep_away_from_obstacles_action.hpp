@@ -24,7 +24,6 @@ namespace nav2_behavior_tree
                 {
                     BT::InputPort<double>("speed", 1.0, "Target speed of the robot"),
                     BT::InputPort<double>("distance", 0.5, "Travel distance"),
-                    BT::InputPort<double>("time", 1.0, "Max time"),
                 });
         }
     };

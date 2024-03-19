@@ -7,11 +7,11 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(nav2_costmap_2d REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
-find_package(nav2_behavior_tree REQUIRED)
 find_package(nav2_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(tf2_ros REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -27,5 +27,5 @@ endif()
 
 ament_package()
 add_executable(keep_away_from_obstacles_sever_node src/keep_away_from_obstacles_sever_node.cpp)
-ament_target_dependencies(keep_away_from_obstacles_sever_node rclcpp rclcpp_action nav2_msgs)
+ament_target_dependencies(keep_away_from_obstacles_sever_node rclcpp rclcpp_action nav2_msgs geometry_msgs tf2_ros)
 install(TARGETS keep_away_from_obstacles_sever_node DESTINATION lib/${PROJECT_NAME})

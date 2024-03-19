@@ -10,7 +10,6 @@
     <Action ID="KeepAwayFromObstacles">
       <input_port name="speed" default="1.0"/>
       <input_port name="distance" default="0.5"/>
-      <input_port name="time" default="1.0"/>
     </Action>
 
     <Action ID="BackUpFollowPath">

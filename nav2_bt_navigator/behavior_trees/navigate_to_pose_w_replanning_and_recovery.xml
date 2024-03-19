@@ -21,7 +21,7 @@
       </PipelineSequence>
       <ReactiveFallback name="RecoveryFallback">
         <GoalUpdated/>
-        <KeepAwayFromObstacles distance="0.5" speed="0.7" time="1.0" />
+        <KeepAwayFromObstacles distance="0.5" speed="0.7"/>
       </ReactiveFallback>
     </RecoveryNode>
   </BehaviorTree>

@@ -12,13 +12,12 @@ namespace nav2_behavior_tree
     {
         getInput("speed", goal_.speed);
         getInput("distance", goal_.distance);
-        getInput("time", goal_.time);
     }
 
     void KeepAwayFromObstaclesAction::on_tick()
     {
         increment_recovery_count();
-        std::cout << "行为树成功调用 speed: " << goal_.speed << "distance: " << goal_.distance << "time: " << goal_.time << std::endl;
+        std::cout << "恢复行为树成功调用 speed: " << goal_.speed << "distance: " << goal_.distance << std::endl;
     }
 
 } // namespace robot_behavior_tree
